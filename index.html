@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格布局</title>
+</head>
+<style>
+    .item1 {
+        grid-area: a;
+        background-color: antiquewhite;
+    }
+
+    .item2 {
+        grid-area: b;
+        background-color: rgb(41, 64, 168);
+    }
+
+    .item3 {
+        grid-area: c;
+        background-color: rgb(232, 55, 55);
+    }
+
+    .item4 {
+        grid-area: d;
+        background-color: rgb(45, 213, 67);
+    }
+
+    .item5 {
+        grid-area: e;
+        background-color: rgb(144, 30, 132);
+    }
+
+    .item6 {
+        grid-area: f;
+        background-color: rgb(185, 224, 27);
+    }
+
+    .item7 {
+        grid-area: g;
+        background-color: rgb(219, 223, 20);
+    }
+
+    .item8 {
+        grid-area: h;
+        background-color: rgb(12, 9, 71);
+        color: #f5efef;
+    }
+
+    .item9 {
+        grid-area: i;
+        background-color: rgb(219, 223, 20);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'a a a b'
+            'c d e f'
+            'g h i f';
+        grid-gap: 5px;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-template-rows: 40vh 200px 200px;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">学校要闻</div>
+        <div class="item2">快速连接</div>
+        <div class="item3">综合新闻</div>
+        <div class="item4">通知公告</div>
+        <div class="item5">科学研究</div>
+        <div class="item6">专题网站</div>
+        <div class="item7">通知公告</div>
+        <div class="item8">科学研究</div>
+        <div class="item9">专题网站</div>
+    </div>
+
+</body>
+
+</html>
